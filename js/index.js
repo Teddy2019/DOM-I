@@ -65,9 +65,13 @@ topSectionH1.appendChild(h3rd);
 h1st.textContent = h1Content.substring(0,3);
 h2nd.textContent = h1Content.substring(3,6);
 h3rd.textContent = h1Content.substring(6);
+h1st.style.height = '5px';
+h2nd.style.height = '5px';
+h3rd.style.height = '5px';
 
 const butt = document.querySelector('button');
 butt.textContent = siteContent["cta"]["button"];
+butt.style.marginTop = '80px';
 
 const catImg = document.getElementById("cta-img");
 catImg.setAttribute('src', siteContent["cta"]["img-src"]);
@@ -94,4 +98,19 @@ pContents[6].textContent = siteContent["contact"]["phone"];
 pContents[7].textContent = siteContent["contact"]["email"];
 pContents[8].textContent = siteContent["footer"]["copyright"];
 
-console.log(pContents);
+const navColor = document.querySelectorAll('a');
+navColor.forEach(function(element){element.style.color = 'green'});
+
+const navAdd = document.querySelector('nav');
+const moreNav1 = document.createElement('a');
+const moreNav2 = document.createElement('a');
+navAdd.appendChild(moreNav1);
+navAdd.prepend(moreNav2);
+moreNav1.textContent = 'SignIn';
+moreNav2.textContent = 'Home';
+moreNav1.style.color = 'green';
+moreNav2.style.color = 'green';
+moreNav1.setAttribute('href','#');
+moreNav2.setAttribute('href','#');
+
+
