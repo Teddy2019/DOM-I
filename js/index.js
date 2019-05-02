@@ -72,3 +72,6 @@ butt.textContent = siteContent["cta"]["button"];
 const catImg = document.getElementById("cta-img");
 catImg.setAttribute('src', siteContent["cta"]["img-src"]);
 console.log(catImg);
+
+const middleImg = document.getElementById("middle-img");
+middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
