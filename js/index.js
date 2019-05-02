@@ -71,7 +71,27 @@ butt.textContent = siteContent["cta"]["button"];
 
 const catImg = document.getElementById("cta-img");
 catImg.setAttribute('src', siteContent["cta"]["img-src"]);
-console.log(catImg);
 
 const middleImg = document.getElementById("middle-img");
 middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+
+const h4Content = document.getElementsByTagName("h4");
+h4Content[0].textContent = siteContent["main-content"]["features-h4"];
+h4Content[1].textContent = siteContent["main-content"]["about-h4"];
+h4Content[2].textContent = siteContent["main-content"]["services-h4"];
+h4Content[3].textContent = siteContent["main-content"]["product-h4"];
+h4Content[4].textContent = siteContent["main-content"]["vision-h4"];
+h4Content[5].textContent = siteContent["contact"]["contact-h4"];
+
+const pContents = document.getElementsByTagName('p');
+pContents[0].textContent = siteContent["main-content"]["features-content"];
+pContents[1].textContent = siteContent["main-content"]["about-content"];
+pContents[2].textContent = siteContent["main-content"]["services-content"];
+pContents[3].textContent = siteContent["main-content"]["product-content"];
+pContents[4].textContent = siteContent["main-content"]["vision-content"];
+pContents[5].textContent = siteContent["contact"]["address"];
+pContents[6].textContent = siteContent["contact"]["phone"];
+pContents[7].textContent = siteContent["contact"]["email"];
+pContents[8].textContent = siteContent["footer"]["copyright"];
+
+console.log(pContents);
