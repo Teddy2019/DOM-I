@@ -39,4 +39,36 @@ const siteContent = {
 
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+logo.setAttribute('src', siteContent["nav"]["img-src"]);
+
+const aTage = document.getElementsByTagName('a');
+const navContents = siteContent.nav;
+aTage[0].textContent = navContents["nav-item-1"];
+aTage[1].textContent = navContents["nav-item-2"];
+aTage[2].textContent = navContents["nav-item-3"];
+aTage[3].textContent = navContents["nav-item-4"];
+aTage[4].textContent = navContents["nav-item-5"];
+aTage[5].textContent = navContents["nav-item-6"];
+
+const topSectionH1 = document.querySelector('h1');
+const h1Content = siteContent["cta"]["h1"];
+const h1st = document.createElement('h1');
+const br1 = document.createElement('br');
+const h2nd = document.createElement('h1');
+const br2 = document.createElement('br');
+const h3rd = document.createElement('h1');
+topSectionH1.appendChild(h1st);
+topSectionH1.appendChild(br1);
+topSectionH1.appendChild(h2nd);
+topSectionH1.appendChild(br2);
+topSectionH1.appendChild(h3rd);
+h1st.textContent = h1Content.substring(0,3);
+h2nd.textContent = h1Content.substring(3,6);
+h3rd.textContent = h1Content.substring(6);
+
+const butt = document.querySelector('button');
+butt.textContent = siteContent["cta"]["button"];
+
+const catImg = document.getElementById("cta-img");
+catImg.setAttribute('src', siteContent["cta"]["img-src"]);
+console.log(catImg);
